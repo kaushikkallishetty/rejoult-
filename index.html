@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+
+<body>
+    <div class="mid-bg">
+
+        <div class="wallet-details-container d-none d-md-block" id="wallet-details-page">
+            <div class="follower-logo-container">
+                <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618599258/Group_6878_ijwk8n.png" class="follower-logo d-none d-md-block" />
+            </div>
+            <div class="wallet-bg pt-0 pl-2">
+                <div class="text-center mb-4">
+                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618599258/Group_6878_ijwk8n.png" />
+                </div>
+                <div class="colse-page text-left pl-1 mb-4 d-md-none">
+                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618600295/Menu_r5ieqb.png" id="back-to-main-pageW" />
+                </div>
+                <div class="wallet-options">
+                    <div class="wallet-page-details mb-2">
+                        <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618600766/wallet_alt_k8ciwd.png" class="logo-wallet" />
+                        <span class="wallet-styles">Wallet</span>
+                    </div>
+                    <div class="page-details mb-2">
+                        <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618601761/group-community_hyjfaz.png" class="logo-wallet" />
+                        <span class="page-font-styles text-white">Wolfpackst</span>
+                    </div>
+                    <div class="page-details mb-2">
+                        <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618601761/document_mds2qv.png" class="logo-wallet" />
+                        <span class="page-font-styles text-white">Portfolio</span>
+                    </div>
+                    <div class="page-details mb-2">
+                        <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618601761/transparency_bdku9y.png" class="logo-wallet" />
+                        <span class="page-font-styles text-white">Transparency</span>
+                    </div>
+                    <div class="page-details mb-2">
+                        <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618601761/buildings-city_nx7aty.png" class="logo-wallet" />
+                        <span class="page-font-styles text-white">All Properties</span>
+                    </div>
+                </div>
+                <div class="warning-container-main d-none d-md-block ml-3" id="warningContainer">
+
+                    <div class="warning-container">
+                        <div class="warning-content-container">
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618718680/check_sdzkqe.png" class="warning-icon" />
+                            <div class="d-flex flex-row justify-content-end">
+                                <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618719241/ic_cancel_24px_bwykjs.png" class="warning-cancel-icon" id="warningCancelIcon" />
+                            </div>
+                            <p class="warning-msg">Your account is not yet activated to sell Freedom Coins<sup>™</sup>. Please specify your PayPal payment address to activate your account.</p>
+                            <button class="btn btn-warning warning-msg">Click Here</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="main-bg-container">
+            <div class="main-page-container" id="main-page">
+                <div class="container">
+                    <nav class="fixed-top d-md-none">
+                        <div class="nav-container1">
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618583912/Group_6877_q3balw.png" class="leaf-logo" />
+
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618660380/Message_qfntq4.png" class="message-logo text-white" />
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618586259/ic_notifications_24px_nyydue.png" class="notification-logo" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" class="nav_logo" id="toProfileDetailsPage" />
+
+
+                        </div>
+                        <div class="nav-container2">
+                            <div>
+                                <span class="wallet-style"><img src=" https://res.cloudinary.com/dv6seelwq/image/upload/v1618640401/Menu_oinoty.png" class="wallet-logo" id="go-to-wallet-details-page" />Wallet</span>
+
+                            </div>
+                            <div class="investors-card">
+                                <div class="investors-logo-bg">
+                                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618584655/save-money_nb8fqd.png" />
+                                </div>
+                                <p class="inverstor-style"> inverstor </p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="top-slide-overview-container">
+                    <div class="bg-container">
+                        <div class="top-slide">
+                            <p class="overview">OverView</p>
+                            <p class="savings">Savings</p>
+                            <p class="savings">Investments</p>
+                        </div>
+                        <div class="notifi-messg-profile-container d-none d-md-inline">
+                            <div class="message-invert-container">
+                                <div>
+                                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618660380/Message_qfntq4.png" class="message-logo" />
+                                </div>
+                                <div>
+                                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618659619/Notification_htuac3.png" class="notification-logo" />
+                                </div>
+
+                                <div class="investors-card">
+                                    <div class="investors-logo-bg">
+                                        <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618584655/save-money_nb8fqd.png" />
+                                    </div>
+                                    <p class="inverstor-style"> inverstor </p>
+                                </div>
+                                <div class="profile-img-container">
+                                    <p class="mr-3 ml-3 mt-1 line-style">|</p>
+                                    <div class="mr-3">
+                                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" class="nav_logo" />
+                                    </div>
+
+                                    <p class="profile-name mr-3">Robert Drowney<img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618659619/arrow2-down_bkgkua.png" id="profileArrw" class="pl-3" /></p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="openProfile shadow-lg d-none" id="openProfile">
+                        <div class="profile-page-details mb-0">
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618637219/account_luhdxv.png" class="logo-profile-de" />
+                            <span class="text-grey Profile-style">Profile</span>
+
+                        </div>
+                        <hr class="hr-line mt-0" />
+                        <div class="profile-page-details mb-0">
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618637219/card_yjygfb.png" class="logo-profile-de" />
+                            <span class="Update-Account-style text-grey mb-1">Update Account</span>
+                        </div>
+                        <hr class="hr-line mt-0" />
+                        <div class="Profile-page-details mb-2">
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618637219/Log_Out_vztgm3.png" class="logo-profile-de" />
+                            <span class="text-grey Profile-style">Log Out</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainbody-sub-container">
+                    <div class="Total-balance-and-saving-cards">
+                        <div class="Balance">
+                            <div class="Total-balance-style">
+                                <h1 class="Total-balance">Total Balance <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618640635/Component_171_4_kj3u4e.png" class="mr-1" id="getIcontent" />: $60.00</h1>
+                                <span class="bg-dark rounded p-1 text-white i-symbol d-none" id="iContent">Total Balance, It includes overall balance like freedom coin, property investment & wolfpack investment</span>
+                            </div>
+                            <div class="Wallet-address-style">
+                                <h1 class="Total-balance">Wallet Address <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618583555/Component_75_3_l9vo3y.png" id="getQrCode" /></h1>
+                            </div>
+
+                        </div>
+                        <div class="qrCodeContainer d-none" id="qrCode">
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618639647/1200px-QR_code_for_mobile_English_Wikipedia.svg_kdlb61.png" class="qrCode" />
+                        </div>
+
+                        <div class="checking-savings-trans-invest-container">
+                            <div class="checking-savings-container">
+                                <div class="">
+                                    <div class="shadow checking-card-container ml-2 mr-2">
+                                        <p class="card-heading">Checking</p>
+                                        <div class="card-content">
+                                            <p class="drop-down1">Cash <span class="spanEleColon">:</span><span class="amount font-weight-bold">$20.00</span> </p>
+                                            <p class="drop-down">Buy Coins <sup>TM</sup></p>
+                                            <select class="select-options">
+                                                <option value="0">0</option>
+                                                <option value="100000">100000</option>
+                                            </select>
+                                            <span class="bg-dark rounded p-1 text-white b-symbol d-none" id="buyFaqs">Read FAQ’s</span>
+                                            <button class="custom-button" id="getBuyFaqs">Buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ml-2 mr-0">
+                                    <div class="shadow checking-card-container1">
+                                        <p class="card-heading">Savings</p>
+                                        <div class="card-content">
+                                            <p class="drop-down1">Invested<span class="Colon1">:</span><span class="amount font-weight-bold">$20.00</span> </p>
+                                            <span class="bg-dark rounded p-1 text-white i-symbol i-symbol1 d-none" id="iSavingsContent">Projected total payments based on term and APR</span>
+                                            <p class="drop-down1">Total Payout <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618640635/Component_171_4_kj3u4e.png" class="ml-1" id="getSavingscontent" /> <span class="Colon">:</span><span class="amount font-weight-bold">$27.00</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Transfers-investment-container">
+                                <div class="ml-2 mr-2">
+                                    <div class="shadow checking-card-container">
+                                        <p class="card-heading">Transfers</p>
+                                        <div class="card-content">
+                                            <p class="drop-down1">paypal <span class="spanEleColon"></span><span class="amount">Bank Account</span> </p>
+                                            <p class="drop-down">Sell Coins <sup>TM</sup></p>
+                                            <select class="select-options">
+                                                <option value="0" class="amount">0</option>
+                                                <option value="100000" class="amount">100000</option>
+                                            </select>
+                                            <span class="bg-dark rounded p-1 text-white b1-symbol d-none" id="SellFaqs">Read FAQ’s</span>
+                                            <button class="custom-button" id="getSellFaqs">Sell</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ml-2 mr-2">
+                                    <div class="shadow checking-card-container1">
+                                        <p class="card-heading">Investments</p>
+                                        <div class="card-content">
+                                            <p class="drop-down1">Invested <span class="Colon1">:</span><span class="amount font-weight-bold">$20.00</span> </p>
+
+                                            <p class="drop-down1">Contributed<span class="Colon">:</span><span class="amount font-weight-bold">$20.00</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="recent-transcations-container-md d-none d-md-block mt-3">
+                            <div>
+                                <h1 class="recent-transcations-main-headind">Recent Transactions</h1>
+                            </div>
+                            <div class="recent-transcations-top-slide">
+                                <p class="recent-date date-style">Date</p>
+                                <p class="recent-trans date-style">Transactions</p>
+                                <p class="recent-amount date-style">Amount</p>
+                            </div>
+                            <div class="recent-transcations-details">
+                                <p class="recent-date card-dis">09 Mar 2020</p>
+                                <p class="recent-trans card-dis">20922 Avalon Drive (Jon Hea..)<span class="trans-name">— Dividend</span></p>
+                                <p class="recent-amount money card-dis text-success">$10.00</p>
+                            </div>
+                            <div class="recent-transcations-details">
+                                <p class="recent-date card-dis">09 Mar 2020</p>
+                                <p class="recent-trans card-dis">20922 Avalon Drive (Jon Hea..)<span class="trans-name">— Purchase</span></p>
+                                <p class="recent-amount money card-dis text-dark">-$1000.00</p>
+                            </div>
+                            <div class="recent-transcations-details">
+                                <p class="recent-date card-dis">09 Mar 2020</p>
+                                <p class="recent-trans card-dis">Freedom Coin<span class="trans-name">— Deposit</span></p>
+                                <p class="recent-amount money card-dis text-success">$10.00</p>
+                            </div>
+                            <div class="recent-transcations-details">
+                                <p class="recent-date card-dis">09 Mar 2020</p>
+                                <p class="recent-trans card-dis">Freedom Coin<span class="trans-name">— Withdrawal</span></p>
+                                <p class="recent-amount money card-dis text-dark">-$500.00</p>
+                            </div>
+                            <div class="recent-transcations-details">
+                                <p class="recent-date card-dis">09 Mar 2020</p>
+                                <p class="recent-trans card-dis">\Profit Wolfpack (Alpha Name)<span class="trans-name">— Purchase</span></p>
+                                <p class="recent-amount money card-dis text-dark">-$400.00</p>
+                            </div>
+                            <div class="recent-transcations-details">
+                                <p class="recent-date card-dis">09 Mar 2020</p>
+                                <p class="recent-trans card-dis">Non Profit Wolfpack (Alpha N..)<span class="trans-name">— Contribute</span></p>
+                                <p class="recent-amount money card-dis text-dark">-$400.00</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <h1 class="View-more mr-5 d-none d-md-block">View More</h1>
+                        </div>
+                    </div>
+                    <div class="assets-and-transcation-container">
+                        <div class="assets-container shadow-sm mb-3">
+                            <div class="assets">
+                                <h1 class="assets-main-heading">Available Assets</h1>
+                                <hr class="Assets-main-line d-none d-md-block" />
+                                <div class="Assets-card">
+
+                                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618591477/Property-3_sctf3u.png" class="image_logo" />
+
+                                    <div class="assets-content-container">
+                                        <p class="assets-heading">Potential Covid-19 Cure: Clinical Trial</p>
+                                        <p class="text-grey assets-dis-head">Description:</p>
+                                        <p class="text-grey assets-dis">A well known, safe, generic medication that has been used for decades has been shown to….</p>
+                                    </div>
+
+                                </div>
+                                <div class="Assets-card">
+
+                                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618591477/Property-2_dunxqk.png" class="image_logo" />
+
+                                    <div class="assets-content-container">
+                                        <p class="assets-heading">Mission <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618659619/For_Profit_Icon_rmqgxv.png" class="dollar-img" id="getFeed" /></p>
+                                        <span class="bg-dark rounded p-1 text-white d-symbol d-none" id="dollarFeed">For Profit Feed</span>
+                                        <p class="text-grey assets-dis-head">Description:</p>
+                                        <p class="text-grey assets-dis">Ownership in Minuteman is decentralized and distributed democratically across its base of…</p>
+                                    </div>
+
+                                </div>
+                                <div class="Assets-card">
+
+                                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618591478/Property-1_mwyudj.png" class="image_logo" />
+
+                                    <div class="assets-content-container">
+                                        <p class="assets-heading mb-1">20922 Avalon Drive</p>
+                                        <p class="text-grey assets-dis-head">Address:</p>
+                                        <p class="text-grey assets-dis"> 8801 Holly Road<br />Tullahoma, TN 37388</p>
+                                    </div>
+
+                                </div>
+                                <div class="Assets-card">
+
+                                    <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618591478/Property_nte4vb.png" class="image_logo" />
+                                    <div class="assets-content-container">
+
+                                        <p class="assets-heading mb-2">17456 Eastgate Drive</p>
+                                        <p class="text-grey assets-dis-head">Address:</p>
+                                        <p class="text-grey assets-dis">23 North Briarwood Avenue<br /> Williamsburg, VA 23185</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="view-more-style d-none d-md-block">
+                                <p>view more</p>
+                            </div>
+
+                        </div>
+                        <div class="d-none d-md-block d-flex flex-row justify-content-end ml-auto">
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618597020/200_x_200_pzl5ei.png" class="rejoult-img d-none d-md-block" />
+                        </div>
+
+                        <div class="recent-container mt-3 d-md-none">
+                            <div>
+                                <h1 class="recent-transcations-main-headind">Recent Transactions</h1>
+                            </div>
+                            <div class="recent-transcations-card mb-3 mt-3">
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Date</span><span class="Colon2">:</span><span class="card-dis">09 Mar, 2020</span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Transaction</span><span class="Colon2">:</span><span class="card-dis">20922 Avalon Drive (Jon Hea..)<br /><span class="trans-name">— Dividend</span></span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Amount</span><span class="Colon2">:</span><span class="card-dis money">$10</span>
+                                </div>
+                            </div>
+
+
+                            <div class="recent-transcations-card mb-3 mt-3">
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Date</span><span class="Colon2">:</span><span class="card-dis">09 Mar, 2020</span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">From</span><span class="Colon2">:</span><span class="card-dis">Robert D.<br /><span class="trans-name">— Dividend</span></span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Freedom Coins</span><span class="Colon2">:</span><span class="card-dis money">100</span>
+                                </div>
+                            </div>
+
+
+                            <div class="recent-transcations-card mb-3 mt-3">
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Date</span><span class="Colon2">:</span><span class="card-dis">09 Mar, 2020</span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">From</span><span class="Colon2">:</span><span class="card-dis">Robert D.<br /><span class="trans-name">— Dividend</span></span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Freedom Coins</span><span class="Colon2">:</span><span class="card-dis money">100</span>
+                                </div>
+                            </div>
+
+
+                            <div class="recent-transcations-card mb-3 mt-3">
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Date</span><span class="Colon2">:</span><span class="card-dis">09 Mar, 2020</span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">From</span><span class="Colon2">:</span><span class="card-dis">Robert D.<br /><span class="trans-name">— Dividend</span></span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Freedom Coins</span><span class="Colon2">:</span><span class="card-dis money">100</span>
+                                </div>
+                            </div>
+
+                            <div class="recent-transcations-card mb-3 mt-3">
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Date</span><span class="Colon2">:</span><span class="card-dis">09 Mar, 2020</span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">From</span><span class="Colon2">:</span><span class="card-dis">Robert D.<br /><span class="trans-name">— Dividend</span></span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Freedom Coins</span><span class="Colon2">:</span><span class="card-dis money">100</span>
+                                </div>
+                            </div>
+
+                            <div class="recent-transcations-card mb-3 mt-3">
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Date</span><span class="Colon2">:</span><span class="card-dis">09 Mar, 2020</span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">From</span><span class="Colon2">:</span><span class="card-dis">Robert D.<br /><span class="trans-name">— Dividend</span></span>
+                                </div>
+
+                                <div class="Transactions-details-card mb-3">
+                                    <span class="card-sub-heading">Freedom Coins</span><span class="Colon2">:</span><span class="card-dis money">100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class=" d-flex flex-row justify-content-end d-md-none">
+                        <h1 class="View-more text-center mr-5">View More</h1>
+                        <div class="text-right ml-5">
+                            <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618597020/200_x_200_pzl5ei.png" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="profile-details p-4 d-none" id="profileDetails">
+            <div class="colse-page text-right pl-1 mb-4">
+                <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618637219/Component_172_1_gdzugx.png" class="text-dark" id="back-to-main-page" />
+            </div>
+            <div class="page-details mb-0">
+                <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618637219/account_luhdxv.png" class="logo-wallet" />
+                <span class="text-grey">Profile</span>
+            </div>
+            <hr class="hr-line mt-0" />
+            <div class="page-details mb-0">
+                <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618637219/card_yjygfb.png" class="logo-wallet" />
+                <span class="Update-Account-style text-grey">Update Account</span>
+            </div>
+            <hr class="hr-line mt-0" />
+            <div class="page-details mb-2">
+                <img src="https://res.cloudinary.com/dytr8gjhd/image/upload/v1618637219/Log_Out_vztgm3.png" class="logo-wallet" />
+                <span class="text-grey">Log Out</span>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+
+</body>
+
+</html>
